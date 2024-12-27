@@ -8,5 +8,4 @@ WORKDIR /app
 COPY . .
 
 # Install any needed packages specified in package*.json
-RUN cd backend && npm i --force && \
-cd ../client/ && npm i --force
+RUN cd ../client/ && npm i --force
