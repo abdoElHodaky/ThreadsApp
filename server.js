@@ -53,7 +53,7 @@ db.once('open', () => {
 
 // Developement mode
 const port = process.env.PORT || 3000;
-app.use(express.static('./assets'));
+app.use(express.static('./client/build/'));
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
 // app.use(
